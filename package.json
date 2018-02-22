@@ -1,0 +1,22 @@
+{
+  "name": "cron",
+  "version": "0.0.1",
+  "description": "My React App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus Soares",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-loader": "^7.1.2",
+    "merge": "^1.2.0",
+    "path": "^0.12.7"
+  }
+}
