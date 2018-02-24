@@ -1,22 +1,39 @@
 {
-  "name": "cron",
-  "version": "0.0.1",
-  "description": "My React App",
-  "main": "index.js",
+  "name": "fluxreactapp",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=dev node ./webpack/webpack.server.js",
+    "start": "node ./bin/www"
   },
-  "author": "Matheus Soares",
-  "license": "MIT",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@babel/preset-env": "^7.0.0-beta.40",
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "colors": "^1.1.2",
+    "json-output-webpack-plugin": "^1.0.0",
     "merge": "^1.2.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.2"
   }
 }

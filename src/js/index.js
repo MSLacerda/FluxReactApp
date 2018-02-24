@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-import App from './app'
+// import MainApp from './main/app'
 
+console.log('teste')
 
 ReactDOM.render(
-    <App />,
+    <div> Ola </div>,
     document.getElementById("root")
 );
 

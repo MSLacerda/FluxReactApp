@@ -1,17 +1,17 @@
-import { Component } from React;
+import React from 'react'
+import { Component } from 'react';
 
 
 export default class App extends Component {
-    constructor () {
-        super();
-        this.hello = "Olá Mundo!";
+    constructor (props) {
+        super(props);
     }
 
     render() {
         return (
             <div>
                 <p> 
-                    {this.hello}
+                    Teste
                 </p>
             </div>
         )
