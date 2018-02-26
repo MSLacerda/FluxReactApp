@@ -13,7 +13,7 @@ module.exports = merge(base, {
             'babel-polyfill',
             'webpack-dev-server/client?http://localhost:5000',
             'webpack/hot/dev-server',
-            './src/js/index.js',
+            './src/index',
         ],
     },
     plugins: [
@@ -24,6 +24,6 @@ module.exports = merge(base, {
     ],
     output: {
         publicPath: 'http://localhost:5000/dist/',
-        filename: '[name].bundle.[hash].js'
+        filename: '[name].bundle.js'
     }
 })

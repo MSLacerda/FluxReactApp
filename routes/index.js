@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   const bundle = require(config.bundle.toString())
 
 
-  res.render('index', { title: 'Express', script: bundle});
+  res.render('index', { title: 'Express', bundle});
 });
 
 module.exports = router;

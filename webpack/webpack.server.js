@@ -8,11 +8,16 @@ const path = require("path");
 const backend = new URL('http://localhost:3000')
 
 
+
 const assets = new URL(devConf.output.publicPath);
+
+if(module.hot) module.hot.accept();
+
 
 new WebpackDevServer( webpack(devConf), {
     publicPath: assets.href,
     hot: true,
+    overlay: true,
     inline: true,
     noInfo: true,
     historyApiFallback: true,
