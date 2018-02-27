@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Config
-import routes from "./Routes"
+import Routes from "./routes"
 
 // Modules
 import Layout from './components/Layout';
@@ -11,6 +11,4 @@ import Layout from './components/Layout';
 import 'semantic-ui-css/semantic.min.css';
 
 
-let routerConfig = routes();
-
-ReactDOM.render(routerConfig, document.getElementById('root'));
+ReactDOM.render(<Routes />, document.getElementById('root'));

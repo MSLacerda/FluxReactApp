@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Input, Menu, Segment } from 'semantic-ui-react'
+import { Link } from 'react-router'
 
 export default class HeaderMenu extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class HeaderMenu extends Component {
 
     return (
       <Menu pointing>
-        <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
+        <Menu.Item name='Home' as={Link} to="/home" active={activeItem === 'Home'} onClick={this.handleItemClick} />
         <Menu.Item name='Todos' active={activeItem === 'Todos'} onClick={this.handleItemClick} />
       </Menu>
     )

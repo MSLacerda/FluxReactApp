@@ -1,6 +1,6 @@
 var settings = {
     'dev' : {
-        bundle: '../public/dist/bundle.json',
+        bundle: '../../public/dist/bundle.json',
         database: {
             login: '',
             password: '',

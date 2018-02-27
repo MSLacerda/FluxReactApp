@@ -13,7 +13,7 @@ module.exports = merge(base, {
             'babel-polyfill',
             'webpack-dev-server/client?http://localhost:5000',
             'webpack/hot/dev-server',
-            './src/index',
+            './client/src/index',
         ],
     },
     plugins: [

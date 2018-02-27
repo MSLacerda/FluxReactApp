@@ -1,5 +1,6 @@
 const { URL } = require("url") 
 const colors = require("colors")
+const open = require('opn');
 const WebpackDevServer = require("webpack-dev-server");
 const webpack = require("webpack");
 const devConf = require("./webpack.dev.conf");
@@ -42,6 +43,8 @@ function startBackEnd() {
     console.log("Starting app...".green);
 
     const instance = spawn('node', ['./bin/www']);
+
+    open("http://localhost:3000/")
 
     instance.stdout.on('data', (data) => {
         console.log(`Server Said >  ${data}`.green);
