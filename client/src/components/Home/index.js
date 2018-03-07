@@ -1,9 +1,13 @@
-import React from "react";
-import Divider, { Input } from "semantic-ui-react"
-import AddForm from './partials/AddForm.jsx'
+
+import React from 'react';
+
 
 export default class Home extends React.Component {
-    render () {
-        <AddForm />
-    }
+    render() {
+        return (
+            <h2 className="">
+                Olá
+            </h2>
+        );
+    } 
 }
